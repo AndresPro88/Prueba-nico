@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Crear Post{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="row justify-content-center ym-3 mt-5">
+            <div class="col-6 bg-highlight">
+                <h1 class="mb-4"> Crear un nuevo Post</h1>
+                {{ form(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
